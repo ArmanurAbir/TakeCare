@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TakeCare - Chat with Doctor</title>
+  <link rel="icon" href="images/takecarelogo.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <table width="100%" class="header-table py-2 bg-light border-bottom">
+    <tr>
+      <td width="15%" align="center"></td>
+      <td width="30%" align="right">
+        <img src="images/takecarelogo.jpg" width="100" alt="TakeCare" />
+      </td>
+      <td width="30%" class="brand-info" align="left">
+        <h1><b>TakeCare</b></h1>
+        <h5>Wellbeing Made Simple</h5>
+      </td>
+      <td width="20%" align="center">
+        <form class="d-flex justify-content-center" action="#" method="POST">
+          <input class="form-control" type="search" placeholder="Search TakeCare Features" />
+          <button class="btn btn-outline-primary ms-2" type="submit">Search</button>
+        </form>
+      </td>
+      <td width="10%"></td>
+    </tr>
+  </table>
+
+  <!-- Chat Section -->
+  <div class="container mt-4">
+    <div class="row align-items-center">
+      <!-- Chat Area -->
+      <div class="col-md-6 mb-4">
+        <h3 class="text-primary mb-3">Talk to Dr. CareBot</h3>
+        <div id="chatBox" class="chat-box">
+          <div class="bot-msg"><span>🤖 Hello! I'm Dr. CareBot. Please share any symptoms or feelings you're experiencing.</span></div>
+        </div>
+        <div class="input-group mt-3">
+          <input type="text" id="chatInput" class="form-control" placeholder="Describe your symptoms..." />
+          <button id="sendBtn" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+
+      <!-- Image Area -->
+      <div class="col-md-6 text-center">
+        <img src="images/mental_health.jpg" alt="Mental Health Support" class="img-fluid rounded shadow" style="max-height: 400px;" />
+      </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="text-center mt-4">
+      <a href="index.html" class="btn btn-primary">⬅ Back to Home</a>
+    </div>
+  </div>
+
+  <!-- Chatbot Script -->
+  <script>
+    $(document).ready(function () {
+      function sendMessage() {
+        const $input = $("#chatInput");
+        const $chatBox = $("#chatBox");
+        const userMessage = $input.val().trim();
+
+        if (userMessage === "") return;
+
+        // Append user message
+        const $userBubble = $('<div class="user-msg"><span></span></div>');
+        $userBubble.find("span").text(userMessage);
+        $chatBox.append($userBubble);
+
+        // Generate bot reply
+        const botReply = getBotReply(userMessage);
+        const $botBubble = $('<div class="bot-msg"><span></span></div>');
+        $botBubble.find("span").text("🤖 " + botReply);
+        $chatBox.append($botBubble);
+
+        // Scroll to bottom
+        $chatBox.scrollTop($chatBox[0].scrollHeight);
+        $input.val("");
+      }
+
+      function getBotReply(message) {
+        const msg = message.toLowerCase();
+
+        if (msg.includes("depression")) {
+          return "Depression can feel overwhelming. Try maintaining a routine, staying connected with loved ones, and seek support from a counselor.";
+        } else if (msg.includes("anxiety")) {
+          return "Anxiety is common. Deep breathing, journaling, and mindfulness can help. Consider speaking with a mental health specialist.";
+        } else if (msg.includes("panic")) {
+          return "During panic episodes, focus on slow breathing and grounding techniques. If persistent, consult a therapist.";
+        } else if (msg.includes("insomnia") || msg.includes("sleep")) {
+          return "For better sleep, try avoiding screens before bed and create a calm bedtime routine. If it continues, get professional advice.";
+        } else if (msg.includes("stress") || msg.includes("burnout")) {
+          return "Stress can be reduced through rest, physical activity, and taking breaks. Don't hesitate to reach out for support.";
+        } else if (msg.includes("grief") || msg.includes("loss")) {
+          return "Grief is natural. Give yourself time, and don’t be afraid to talk to someone who understands.";
+        } else if (msg.includes("sad") || msg.includes("hopeless")) {
+          return "You are not alone. Talking to a mental health professional can help you navigate these feelings.";
+        } else if (msg.includes("hello") || msg.includes("hi")) {
+          return "Hello there! I’m here to support you. Feel free to tell me how you’re feeling.";
+        } else if (msg.includes("help")) {
+          return "I'm here to help. Please describe any mental health issues or symptoms you're facing.";
+        } else {
+          return "Thanks for sharing. Mental health is important—tell me more so I can support you better.";
+        }
+      }
+
+      $("#sendBtn").on("click", sendMessage);
+      $("#chatInput").on("keypress", function (e) {
+        if (e.which === 13) {
+          e.preventDefault();
+          sendMessage();
+        }
+      });
+    });
+  </script>
+</body>
