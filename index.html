@@ -10,28 +10,27 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <table width="100%" class="header-table py-2 bg-light border-bottom">
-    <tr>
-      <td width="15%" align="center">
-        <button class="btn btn-primary" onclick="location.href='Register.html'">Register</button>
-        <button class="btn btn-primary" onclick="location.href='login.html'">Log In</button>
-      </td>
-      <td width="30%" align="right">
-        <img src="images\takecarelogo.jpg" width="100" alt="TakeCare">
-      </td>
-      <td width="30%" class="brand-info" align="left">
-        <h1><b>TakeCare</b></h1>
-        <h5>Wellbeing Made Simple</h5>
-      </td>
-      <td width="20%" align="center">
-        <form class="d-flex justify-content-center" action="#" method="POST">
-          <input class="form-control" type="search" placeholder="Search TakeCare Features">
-          <button class="btn btn-outline-primary ms-2" type="submit">Search</button>
-        </form>
-      </td>
-      <td width="10%"></td>
-    </tr>
-  </table>
+  <div class="header-table py-2 bg-light border-bottom" style="width: 100%; display: flex; align-items: center;">
+    <div style="width: 15%; text-align: center;">
+      <button class="btn btn-primary" onclick="location.href='Register.html'">Register</button>
+      <button class="btn btn-primary" onclick="location.href='login.html'">Log In</button>
+    </div>
+    <div style="width: 30%; text-align: right;">
+      <img src="images/takecarelogo.jpg" width="100" alt="TakeCare">
+    </div>
+    <div style="width: 30%; text-align: left;" class="brand-info">
+      <h1><b>TakeCare</b></h1>
+      <h5>Wellbeing Made Simple</h5>
+    </div>
+    <div style="width: 20%; text-align: center;">
+      <form class="d-flex justify-content-center" action="#" method="POST">
+        <input class="form-control" type="search" placeholder="Search TakeCare Features">
+        <button class="btn btn-outline-primary ms-2" type="submit">Search</button>
+      </form>
+    </div>
+    <div style="width: 10%;"></div>
+  </div>
+  
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light border-top border-bottom">
     <ul class="navbar-nav mx-auto">
@@ -68,84 +67,80 @@
 
   <main class="banner py-5 bg-info bg-opacity-10">
     <section class="container-fluid page-wrapper">
-        <table width="100%">
-        <tr>
-          <td width="20%"></td>
-            <td width="30%" align="right" valign="middle">
+        <div style="display: flex; width: 100%;">
+            <div style="width: 20%;"></div>
+            <div style="width: 30%; text-align: right; display: flex; align-items: center;">
                 <section class="overlay-box">
                     <h2 class="fw-bold text-dark">TakeCare</h2>
                     <p>Your all-in-one digital health companion. Manage symptoms, track medication, consult doctors, and stay healthy with one simple app.</p>
-                    
-                  <a href="info.html" class="btn btn-primary">More information →</a>
+                    <a href="info.html" class="btn btn-primary">More information →</a>
                 </section>
-              </td>              
-          <td width="30%" align="left">
-            <div id="takecareCarousel" class="carousel slide rounded shadow" data-bs-ride="carousel" style="width: 100%;">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/doctorbio.jpg" class="d-block w-100" alt="Slide 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/ambulance.jpg" class="d-block w-100" alt="Slide 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/food.jpg" class="d-block w-100" alt="Slide 3">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/sickimg.jpg" class="d-block w-100" alt="Slide 4">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#takecareCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#takecareCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              
-          </td>
-          <td width="20%"></td>
-        </tr>
-      </table>
-  </main>
-<!-- Triggering element for the video modal -->
-<main class="banner py-5 bg-info bg-opacity-10">
-  <div class="container-fluid page-wrapper">
-    <table width="100%">
-      <tr>
-        <!-- Video Preview Section -->
-        <td width="50%" align="right" valign="middle">
-          <div class="video-preview" style="position: relative; display: inline-block; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#videoModal">
-            <img src="images/ss.jpg" alt="Watch Video" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); width: 800px; height: 400px;">
-            <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-              <img src="images/play.png" alt="Play Video" style="width: 60px; height: 60px;">
             </div>
-          </div>
-          <h6 align="right"><b>Click to Watch How TakeCare Works</b></h6>
-        </td>
+            <div style="width: 30%; text-align: left;">
+                <div id="takecareCarousel" class="carousel slide rounded shadow" data-bs-ride="carousel" style="width: 100%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/doctorbio.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/ambulance.jpg" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/food.jpg" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/sickimg.jpg" class="d-block w-100" alt="Slide 4">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#takecareCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#takecareCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-        <!-- Features List Section -->
-        <td width="30%" align="left" style="background-color: #f0f0f0;">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">🩺 <strong>Symptom Checker:</strong> AI-powered tool to assess symptoms.</li>
-            <li class="list-group-item">📅 <strong>Doctor Appointments:</strong> Book or manage appointments easily.</li>
-            <li class="list-group-item">💬 <strong>24/7 Doctor Chat:</strong> Get help via text, call, or video.</li>
-            <li class="list-group-item">💊 <strong>Medication Reminders:</strong> Personalized alerts to stay on track.</li>
-            <li class="list-group-item">🥗 <strong>Meal & Fitness Plans:</strong> Customized for your health goals.</li>
-            <li class="list-group-item">🚑 <strong>Emergency Alerts:</strong> One-tap ambulance access with GPS.</li>
-            <li class="list-group-item">🧾 <strong>Medical Records:</strong> Secure cloud-based health document storage.</li>
-            <li class="list-group-item">👨‍👩‍👧‍👦 <strong>Family Health Manager:</strong> Manage care for your whole family.</li>
-            <li class="list-group-item">🌐 <strong>Multilingual Support:</strong> Use the app in your preferred language.</li>
-            <li class="list-group-item">🧠 <strong>Mental Health:</strong> Access to support resources and groups.</li>
-            <li class="list-group-item">🛒 <strong>Medicine Delivery:</strong> Order medications right from the app.</li>
-          </ul>
-        </td>
-        <td width="20%"></td>
-      </tr>
-    </table>
+<!-- Triggering element for the video modal -->
+<section class="banner py-5 bg-info bg-opacity-10">  <div class="container-fluid page-wrapper">
+    <div style="display: flex; width: 100%;">
+      <!-- Video Preview Section -->
+      <div style="width: 50%; text-align: right; display: flex; flex-direction: column; justify-content: center;">
+        <div class="video-preview" style="position: relative; display: inline-block; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#videoModal">
+          <img src="images/ss.jpg" alt="Watch Video" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); width: 800px; height: 400px;">
+          <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <img src="images/play.png" alt="Play Video" style="width: 60px; height: 60px;">
+          </div>
+        </div>
+        <h6 style="text-align: right;"><b>Click to Watch How TakeCare Works</b></h6>
+      </div>
+
+      <!-- Features List Section -->
+      <div style="width: 30%; text-align: left; background-color: #f0f0f0;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">🩺 <strong>Symptom Checker:</strong> AI-powered tool to assess symptoms.</li>
+          <li class="list-group-item">📅 <strong>Doctor Appointments:</strong> Book or manage appointments easily.</li>
+          <li class="list-group-item">💬 <strong>24/7 Doctor Chat:</strong> Get help via text, call, or video.</li>
+          <li class="list-group-item">💊 <strong>Medication Reminders:</strong> Personalized alerts to stay on track.</li>
+          <li class="list-group-item">🥗 <strong>Meal & Fitness Plans:</strong> Customized for your health goals.</li>
+          <li class="list-group-item">🚑 <strong>Emergency Alerts:</strong> One-tap ambulance access with GPS.</li>
+          <li class="list-group-item">🧾 <strong>Medical Records:</strong> Secure cloud-based health document storage.</li>
+          <li class="list-group-item">👨‍👩‍👧‍👦 <strong>Family Health Manager:</strong> Manage care for your whole family.</li>
+          <li class="list-group-item">🌐 <strong>Multilingual Support:</strong> Use the app in your preferred language.</li>
+          <li class="list-group-item">🧠 <strong>Mental Health:</strong> Access to support resources and groups.</li>
+          <li class="list-group-item">🛒 <strong>Medicine Delivery:</strong> Order medications right from the app.</li>
+        </ul>
+      </div>
+
+      <div style="width: 20%;"></div>
+    </div>
   </div>
+</section>
 
   <!-- Video Modal -->
   <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
@@ -158,7 +153,7 @@
         <div class="modal-body">
           <div class="ratio ratio-16x9">
             <video id="popupVideo" controls>
-              <source src="images/AI persona video for innovation and society.mp4" type="video/mp4">
+              <source src="images/ai_tc_2_video.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -166,7 +161,7 @@
       </div>
     </div>
   </div>
-</main>
+
 
 
 
@@ -197,6 +192,18 @@
     </div>
   </div>
 </div>
+
+<!-- Cookie Consent Banner -->
+<div id="cookieBanner" class="cookie-banner bg-white shadow p-4 rounded border position-fixed bottom-0 start-50 translate-middle-x mb-3 d-none" style="z-index: 1050; max-width: 600px; width: 90%;">
+  <p class="mb-3">
+    We use analytical cookies to improve your experience. By accepting, you help us understand how the site is used.
+  </p>
+  <div class="d-flex justify-content-end gap-2">
+    <button class="btn btn-outline-primary" id="rejectCookies">Reject Cookies</button>
+    <button class="btn btn-primary" id="acceptCookies">Accept Analytical Cookies</button>
+  </div>
+</div>
+
 
   
 
