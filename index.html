@@ -33,95 +33,111 @@
   
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light border-top border-bottom">
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle fw-bold" data-bs-toggle="dropdown">GENERAL SERVICES</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="chat_with_doctor.html">Chat with Doctor</a></li>
-          <li><a class="dropdown-item" href="report_manager.html">Report Manager</a></li>
-          <li><a class="dropdown-item" href="famili_health.html">Family Health Management</a></li>
-          <li><a class="dropdown-item" href="medication.html">Medication Reminders </a></li>
-
+    <div class="container-fluid">
+  
+      <!-- Toggler/collapsible Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown">GENERAL SERVICES</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="chat_with_doctor.html">Chat with Doctor</a></li>
+              <li><a class="dropdown-item" href="report_manager.html">Report Manager</a></li>
+              <li><a class="dropdown-item" href="famili_health.html">Family Health Management</a></li>
+              <li><a class="dropdown-item" href="medication.html">Medication Reminders</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown">EMERGENCY SERVICES</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ambulance.html">Ambulance Service</a></li>
+              <li><a class="dropdown-item" href="quick_help.html">Quick Help</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown">FITNESS & MEAL PLANNER</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="diet_and_fitness_plan.html">Diet Plans</a></li>
+              <li><a class="dropdown-item" href="diet_and_fitness_plan.html">Workout Plans</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="mental_health.html">MENTAL HEALTH SUPPORT</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="online.html">ONLINE DOCTOR</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="symptom.html">SYMPTOM CHECKER</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="contact.html">CONTACT</a></li>
         </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle fw-bold" data-bs-toggle="dropdown">EMERGENCY SERVICES</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="ambulance.html">Ambulance Service</a></li>
-          <li><a class="dropdown-item" href="quick_help.html">Quick Help</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle fw-bold" data-bs-toggle="dropdown">FITNESS & MEAL PLANNER</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="diet_and_fitness_plan.html">Diet Plans</a></li>
-          <li><a class="dropdown-item" href="diet_and_fitness_plan.html">Workout Plans</a></li>
-        </ul>
-      </li>
-      <li class="nav-item"><a class="nav-link fw-bold" href="mental_health.html">MENTAL HEALTH SUPPORT</a></li>
-      <li class="nav-item"><a class="nav-link fw-bold" href="online.html">ONLINE DOCTOR</a></li>
-      <li class="nav-item"><a class="nav-link fw-bold" href="symptom.html">SYMPTOM CHECKER</a></li>
-      <li class="nav-item"><a class="nav-link fw-bold" href="contact.html">CONTACT</a></li>
-    </ul>
+      </div>
+    </div>
   </nav>
-
+  
   <main class="banner py-5 bg-info bg-opacity-10">
     <section class="container-fluid page-wrapper">
-        <div style="display: flex; width: 100%;">
-            <div style="width: 20%;"></div>
-            <div style="width: 30%; text-align: right; display: flex; align-items: center;">
-                <section class="overlay-box">
-                    <h2 class="fw-bold text-dark">TakeCare</h2>
-                    <p>Your all-in-one digital health companion. Manage symptoms, track medication, consult doctors, and stay healthy with one simple app.</p>
-                    <a href="info.html" class="btn btn-primary">More information →</a>
-                </section>
-            </div>
-            <div style="width: 30%; text-align: left;">
-                <div id="takecareCarousel" class="carousel slide rounded shadow" data-bs-ride="carousel" style="width: 100%;">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/doctorbio.jpg" class="d-block w-100" alt="Slide 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/ambulance.jpg" class="d-block w-100" alt="Slide 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/food.jpg" class="d-block w-100" alt="Slide 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/sickimg.jpg" class="d-block w-100" alt="Slide 4">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#takecareCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#takecareCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+      <div class="row align-items-center justify-content-center">
+  
+        <!-- Text content -->
+        <div class="col-12 col-md-6 col-lg-4 text-center text-md-end mb-4 mb-md-0">
+          <section class="overlay-box">
+            <h2 class="fw-bold text-dark">TakeCare</h2>
+            <p>Your all-in-one digital health companion. Manage symptoms, track medication, consult doctors, and stay healthy with one simple app.</p>
+            <a href="info.html" class="btn btn-primary">More information →</a>
+          </section>
         </div>
+  
+        <!-- Carousel -->
+        <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+          <div id="takecareCarousel" class="carousel slide rounded shadow mx-auto" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/doctorbio.jpg" class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/ambulance.jpg" class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="images/food.jpg" class="d-block w-100" alt="Slide 3">
+              </div>
+              <div class="carousel-item">
+                <img src="images/sickimg.jpg" class="d-block w-100" alt="Slide 4">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#takecareCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#takecareCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
-</main>
+  </main>
+  
 
 <!-- Triggering element for the video modal -->
-<section class="banner py-5 bg-info bg-opacity-10">  <div class="container-fluid page-wrapper">
-    <div style="display: flex; width: 100%;">
+<section class="banner py-5 bg-info bg-opacity-10">
+  <div class="container-fluid page-wrapper">
+    <div class="row align-items-center justify-content-center">
+      
       <!-- Video Preview Section -->
-      <div style="width: 50%; text-align: right; display: flex; flex-direction: column; justify-content: center;">
-        <div class="video-preview" style="position: relative; display: inline-block; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#videoModal">
-          <img src="images/ss.jpg" alt="Watch Video" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); width: 800px; height: 400px;">
-          <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center text-lg-end">
+        <div class="video-preview d-inline-block position-relative" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#videoModal">
+          <img src="images/ss.jpg" alt="Watch Video" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+          <div class="play-button position-absolute top-50 start-50 translate-middle">
             <img src="images/play.png" alt="Play Video" style="width: 60px; height: 60px;">
           </div>
         </div>
-        <h6 style="text-align: right;"><b>Click to Watch How TakeCare Works</b></h6>
+        <h6 class="mt-2 fw-bold text-lg-end text-center">Click to Watch How TakeCare Works</h6>
       </div>
 
       <!-- Features List Section -->
-      <div style="width: 30%; text-align: left; background-color: #f0f0f0;">
+      <div class="col-12 col-lg-5 features-box">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">🩺 <strong>Symptom Checker:</strong> AI-powered tool to assess symptoms.</li>
           <li class="list-group-item">📅 <strong>Doctor Appointments:</strong> Book or manage appointments easily.</li>
@@ -136,31 +152,29 @@
           <li class="list-group-item">🛒 <strong>Medicine Delivery:</strong> Order medications right from the app.</li>
         </ul>
       </div>
-
-      <div style="width: 20%;"></div>
     </div>
-  </div>
-</section>
+  </div>      
 
-  <!-- Video Modal -->
-  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoModalLabel">TakeCare in Action</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="pauseVideo()"></button>
-        </div>
-        <div class="modal-body">
-          <div class="ratio ratio-16x9">
-            <video id="popupVideo" controls>
-              <source src="images/ai_tc_2_video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoModalLabel">TakeCare in Action</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="pauseVideo()"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <video id="popupVideo" controls>
+            <source src="images/ai_tc_video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
   </div>
+</div>
+
 
 
 
