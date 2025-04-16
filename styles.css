@@ -109,7 +109,9 @@ footer {
   padding: 15px 0;
   border-top: 1px solid #dddddd;
   text-align: center;
+  margin-top: 40px; /* Add space above the footer */
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 700px) {
