@@ -93,9 +93,6 @@ In the future, this project could be improved by adding:
 
 ## Screenshots
 
-Add screenshots of your website here.
-
-Example:
 
 ```md
 ![Home Page](screenshots/home-page.png)
